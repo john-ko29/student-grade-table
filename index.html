@@ -28,7 +28,7 @@
       </table>
     </div>
     <div class="col-4">
-      <form>
+      <form id="grade-form">
         <div class="input-group mb-3">
           <div class="input-group-prepend">
             <label class="input-group-text" for="name"><i class="fa fa-user"></i></label>
@@ -45,7 +45,7 @@
           <div class="input-group-prepend">
             <label class="input-group-text" for="grade"><i class="fa fa-graduation-cap"></i></label>
           </div>
-          <input class="form-control" type="text" name="course" id="grade" placeholder="Student Grade">
+          <input class="form-control" type="number" name="course" id="grade" placeholder="Student Grade">
         </div>
         <button type="submit" class="btn btn-success">Add</button>
         <button type="reset" class="btn btn-warning">Cancel</button>
@@ -55,6 +55,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
   <script src="components/page-header.js"></script>
   <script src="components/grade-table.js"></script>
+  <script src="components/grade-forms.js"></script>
   <script src="components/app.js"></script>
   <script src="main.js"></script>
 </body>
