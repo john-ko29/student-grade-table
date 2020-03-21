@@ -5,5 +5,5 @@ var formElement = document.getElementById("grade-form");
 var pageHeader = new PageHeader(headerElement);
 var gradeTable = new GradeTable(tableElement);
 var gradeForm = new GradeForm(formElement);
-var app = new App(gradeTable, pageHeader, formElement);
+var app = new App(gradeTable, pageHeader, gradeForm);
 app.start();
