@@ -9,23 +9,9 @@ class GradeTable {
     tbodyElement.innerHTML = "";
     for (var i = 0; i < grades.length; i++) {
       tbodyElement.appendChild(this.renderGradeRow(grades[i], this.deleteGrade));
-      // var trElement = document.createElement("tr");
 
-      // var tdNameElement = document.createElement("td");
-      // var tdCourseElement = document.createElement("td");
-      // var tdGradeElement = document.createElement("td");
-
-      // tdNameElement.textContent = grades[i].name;
-      // tdCourseElement.textContent = grades[i].course;
-      // tdGradeElement.textContent = grades[i].grade;
-
-      // trElement.appendChild(tdNameElement);
-      // trElement.appendChild(tdCourseElement);
-      // trElement.appendChild(tdGradeElement);
-
-      // tbodyElement.appendChild(trElement);
     }
-    if(!grades) {
+    if(!grades.length) {
       this.noGradesElement.classList.remove("d-none");
     } else {
       this.noGradesElement.classList.add("d-none");
